@@ -1,0 +1,148 @@
+/* sheared styles */
+body{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* header related styles */
+header{
+  padding: 20px 70px;
+}
+/* nav section styles */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title{
+  color: #3A3A3A;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav > ul{
+  display: flex;
+}
+
+nav li{
+  list-style: none;
+  margin-right: 25px;
+  font-weight: 600px;
+  font-size: 1rem;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #3A3A3A;
+}
+/* content section */
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.content-description{
+  max-width: 550px;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+
+.content-title{
+  color: #3A3A3A;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.content-paragraph{
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content-btn{
+  border-radius: 41px;
+  background: #E02C6D;
+  border: 0;
+  color: #FFF;
+  font-weight: 700;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.content-img{
+  position: relative;
+}
+
+.img-1{
+  position: absolute;
+}
+
+
+/* responsive design related styles */
+/* media query for small/mobile devices */
+@media screen and (max-width:576px) {
+    header{
+      padding: 20px;
+    }
+
+    nav{
+      flex-direction: column;
+    }
+
+    .header-content{
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+    nav>ul{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header-content{
+      gap: 30px;
+      padding-left: 25px;
+    }
+
+    .content-title{
+      font-size: 2rem;
+    }
+
+    .content-img{
+      padding-top: 30px;
+      padding-bottom: 0;
+    }
+
+    .content-img img{
+      width: 80%;
+      height: 80%;
+    }
+}
+
+/* media query for tab/medium screen */
+@media screen and (min-width:576px) and (max-width:992px) {
+  nav{
+    flex-direction: column;
+  }
+
+  .content-title{
+    font-size: 2rem;
+  }
+
+  .content-img img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
